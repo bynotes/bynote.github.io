@@ -1,0 +1,239 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>是工作改变了我们  还是我们被工作改变了 | 笔记</title><meta name="description" content="&amp;emsp;&amp;emsp;好久没有写博客了，也好久没有打开空间了。今天郁闷在网上闲逛，不觉中又点开了熟悉的界面了，既然打开了，就写点吧，3月20日周末。&amp;emsp;&amp;emsp;又是一个让人心动的周末，但是对我来时却是一个倒紧班的时间，这个时间最邪恶。连续不断的上班，全年无休确实会让人疯狂的，多少和我一起来的人现在已经都走了，都离开了。&amp;emsp;&amp;emsp;毕业了，意味着我们长大了，离开了校园开始自"><meta name="keywords" content="工作"><meta name="author" content="林墨白"><meta name="copyright" content="林墨白"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://bynote.cn/gaibian.html"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="是工作改变了我们  还是我们被工作改变了"><meta property="og:url" content="http://bynote.cn/gaibian.html"><meta property="og:site_name" content="笔记"><meta property="og:description" content="&amp;emsp;&amp;emsp;好久没有写博客了，也好久没有打开空间了。今天郁闷在网上闲逛，不觉中又点开了熟悉的界面了，既然打开了，就写点吧，3月20日周末。&amp;emsp;&amp;emsp;又是一个让人心动的周末，但是对我来时却是一个倒紧班的时间，这个时间最邪恶。连续不断的上班，全年无休确实会让人疯狂的，多少和我一起来的人现在已经都走了，都离开了。&amp;emsp;&amp;emsp;毕业了，意味着我们长大了，离开了校园开始自"><meta property="og:image" content="http://bynote.cn/gaibian/1.jpg"><meta property="article:published_time" content="2020-05-22T03:16:00.000Z"><meta property="article:modified_time" content="2020-08-18T00:07:48.590Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'true'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: {"text":"富强,民主,文明,和谐,爱国,敬业,诚信,友善,自由,平等,公正,法治","fontSize":"15px"},
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-08-18 08:07:48'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="/css/diy/web_bg.css"><link rel="stylesheet" href="/css/diy/diy.css"><meta name="generator" content="Hexo 5.1.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">40</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">38</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa-fw fa fa-paper-plane"></i><span> 一言</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-fan"></i><span> 好玩</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><header class="post-bg" id="page-header" style="background-image: url(/gaibian/1.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">笔记</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa-fw fa fa-paper-plane"></i><span> 一言</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-fan"></i><span> 好玩</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">是工作改变了我们  还是我们被工作改变了</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-05-22T03:16:00.000Z" title="发表于 2020-05-22 11:16:00">2020-05-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-18T00:07:48.590Z" title="更新于 2020-08-18 08:07:48">2020-08-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>&emsp;&emsp;好久没有写博客了，也好久没有打开空间了。今天郁闷在网上闲逛，不觉中又点开了熟悉的界面了，既然打开了，就写点吧，3月20日周末。<br><img src= "/img/loading.gif" data-lazy-src="/gaibian/1.jpg"><br>&emsp;&emsp;又是一个让人心动的周末，但是对我来时却是一个倒紧班的时间，这个时间最邪恶。连续不断的上班，全年无休确实会让人疯狂的，多少和我一起来的人现在已经都走了，都离开了。<br><img src= "/img/loading.gif" data-lazy-src="/gaibian/2.jpg"><br>&emsp;&emsp;毕业了，意味着我们长大了，离开了校园开始自己在社会上闯荡，开始在社会独立。学习着除了专业知识以外的生活常识，人际关系的交往，工作知识的积累……许多许多等着我们去学习。大千世界有多少东西等着我们去学习啊，在社会上我感觉心理和口才课是很重要的一门学问，心理学其实就是古代传说的读心术。知己知彼百战百胜啊。<br>&emsp;&emsp;一个人的思想能从许多方面可以表现出来，学习时流露的那种态度，工作时带着的各种情绪，等等等等。擦言观色就是最好的解释吧。走出校园已经6年了，在这期间我遇到过形形色色的各种各样的人，有心机无数的，也有善良忠诚的，也有对待朋友如知己，也有视情谊为赚钱的工具的。人心难测，所以学好一门学问确实很重要啊。<br><img src= "/img/loading.gif" data-lazy-src="/gaibian/3.jpg"><br>&emsp;&emsp;我们都已长大，生活在这个不大的世界里，生活让我感到了美丽，也让我感到了其中的辛酸与坎坷。人生有两种含义，人生下来就要工作和不断的学习。工作同样让我感到崎岖不顺。刚毕业的时候，接收到的却是新的专业知识的应用，自己依仗着学校里的那么点知识，可以说老师教给我们的是认识各种元件在工作时所起到的作用和其名称。第一次独立工作干活的时候让我碰壁，无处下手，任凭脑海里一遍一遍的快速的翻动学校里学到的知识，但是还是显示的搜索结果为0。后悔了，此时真的心痛的后悔，后悔当时学的不精后悔当时学习时只是感到新奇而没有想到未来工作中某一天会用到它。操作人员急切的关注目光，加上自己急躁的心情，此时的内心思想杂乱无章，没有老师带，只有请求同事的帮助，第一次让我感到了无助。事后下定决心，认真工作，虚心请教，细致的观察同事们的处理问题的方法，学习的精髓时学习处理问题的方法和过程。<br><img src= "/img/loading.gif" data-lazy-src="/gaibian/4.jpg"><br>&emsp;&emsp;几年来每次遇到问题都要记录下来，慢慢的就总结出来了属于自己的工作方法。感谢上天让我身边出现了这么多的好心人。<br>&emsp;&emsp;5年前我感觉我的性格还是很温和的，脾气很好，毕业了工作了，反而性格和脾气也都改变了，现在性子变的很急躁了，做事做不成总是发火，急火攻心，这年头也没有抑制此类的内功心法，失败啊。我感觉是工作改变了我们。工作中我们学习到了团队的精神，集体的力量，筷子的象征。其实我们只是知道总体，而忘记了细节。细节中，可以让我们更好的去操作、去执行。而不是盲目的在不正确的道路上走向团结的终点，中国人的缺点就是只注重结果，而没有人去关注其执行的过程，这就是一个很大的败笔。<br><img src= "/img/loading.gif" data-lazy-src="/gaibian/5.jpg"><br>&emsp;&emsp;通常一种环境下影响一群人，我们一群人却无法改变环境的因素，但是我们可以自己改变自己。克服一种理念和思想，需要下很大决心，同时还要有很坚强的意志力。工作中可以锻炼人的意志和意念。我们也可以从中学习到和领略到的某些东西，终生受益。<br>&emsp;&emsp;同学、同事、同志都是属于志同道合的人，来自天南海北我们就有了说不清的缘分了，不知道是上辈子的注定，还是今生的有缘，聚在一起就是一家人。朋友之间的友谊和志同道合的情谊是一样的重要，情谊深了，工作中才能更和睦，配合的才能更默契。谈到默契的配合，说实话很难，这样从一个人的性格、对待事情的认识、和对待某项工作时的态度。还要有更熟练的业务水平。有的文章中说在一起时间久了就能达到某种默契，我不否认前人总结下的经验，但是我个人还是认为这说法并不完整，一个正常人和一个植物人要达到某种程度上的默契你感觉可能吗？我并没有歧视患病者的想法，只是就事论事，可以细想啊，我们是干活的人就拿工作来说，没有眼力劲要达到某种程度上的默契简直是天方夜谭。不说全部人员，就说经常在一起的几个人就行，前两年一个算是基层最基层的办公室职员吧，学历很高，在一起工作1年，他对工作的态度就是无所谓，出了差错也找不到我。对待工作漠不关心。难道学历≠能力吗？即使很少的能力，1年的时间也差不多了吧。主要还是对待事情不上心。我作为朋友、工友好心提示，用心意会，都是。。。。。无语。俗话说：天生我才必有用吧！在一方面完美，在另方面就不完美吧！也许长处不在这吧！或者不喜欢吧！爱好决定着态度吧！<br><img src= "/img/loading.gif" data-lazy-src="/gaibian/6.jpg"><br>&emsp;&emsp;在日常的工作生活中，也有抵触心理吧，后勤做的不到位让一线的同志可能要受苦了，这是我们改变不了，但是可以争取，我们不能改变别人，但是我们总有能力改变自己吧。可以用另外的方法，另辟捷径呀！哎！<br>&emsp;&emsp;又是一天过去了，忙忙碌碌，有的有收获，有的确没有收获，究竟是工作改变了我们，还是我们被工作改变了！！！</p>
+<p>2011年3月20日星期日</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">林墨白</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://bynote.cn/gaibian.html">http://bynote.cn/gaibian.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://bynote.cn" target="_blank">笔记</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%B7%A5%E4%BD%9C/">工作</a></div><div class="post_share"><div class="social-share" data-image="/gaibian/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/bg/01.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/bg/01.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/bg/02.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/bg/02.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/fendou.html"><img class="prev-cover" data-lazy-src="/fendou/1.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">奋斗的观后感</div></div></a></div><div class="next-post pull-right"><a href="/xiaohua.html"><img class="next-cover" data-lazy-src="/img/bg/post-bg/default_cover-12.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">名著段子,极品混搭冷笑话</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By 林墨白</div><div class="framework-info"><span>由 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="framework-info"><span>CDN </span><a target="_blank" rel="noopener" href="https://Jsdelivr.com">Jsdelivr</a><span>加速 </span><span class="footer-separator">|</span><span>托管 </span><a target="_blank" rel="noopener" href="https://github.com/bynotes">Github</a><span>Host </span></div><div class="footer_custom_text">我相信我可以，但我一直在路上，所以我有无限的可能！！</div><div class="icp"><a target="_blank" rel="noopener" href="https://icp.gov.moe/"><span>萌ICP备</span><img class="icp-icon" src="/img/micp.png"/><span>20200099号</span></a></div><a target="_blank" rel="noopener" href="https://vercel.com/"><img class="icp-icon" src="/img/Hosting.svg"/></a><a target="_blank" rel="noopener" href="https://githun.com/bynote/"><img class="icp-icon" src="/img/FCDN.svg"/></a><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/"><img class="icp-icon" src="/img/WT.svg"/></a><a target="_blank" rel="noopener" href="https://www.jsdelivr.com/"><img class="icp-icon" src="/img/CDN.svg"/></a><div id="running-time"><script>setInterval(()=>{let create_time=Math.round(new Date(Date.UTC(2019,01,01,0,0,0)).getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='本站已在夹缝中安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);</script></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function () {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'xsaWQL3IDE7RtBq0gEalXK6W-MdYXbMMI',
+      appKey: 'zhMAc6wugOXYYyeEhCURqXib',
+      placeholder: '留下你的小脚印把...',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/js/diy/diy.js"></script><script defer="defer" id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script src="/js/third-party/ClickShowText.js" async="async"></script><script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/765286c4.js","daovoice")
+</script><script>var isChatBtn = true
+daovoice('init', {
+  app_id: '765286c4',},{
+  launcher: { 
+     disableLauncherIcon: isChatBtn // 悬浮 ICON 是否显示
+  },
+});
+daovoice('update');
+
+if (isChatBtn) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      daovoice('show')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (false) {
+    function chatBtnHide () {
+      daovoice('update', {},{
+        launcher: { 
+        disableLauncherIcon: true // 悬浮 ICON 是否显示
+        },
+      });
+    }
+    function chatBtnShow () {
+      daovoice('update', {},{
+        launcher: { 
+        disableLauncherIcon: false // 悬浮 ICON 是否显示
+        },
+      });
+    }
+  }
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  'meta[name=description]',
+  '#config_change',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+const pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+})
+
+document.addEventListener('pjax:complete', function () {
+  refreshFn()
+
+  $('script[data-pjax]').each(function () {
+    $(this).parent().append($(this).remove())
+  })
+
+  GLOBAL_CONFIG.islazyload && lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  if (typeof gtag === 'function') {
+    gtag('config', '', {'page_path': window.location.pathname});
+  }
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+})
+
+document.addEventListener('pjax:send', function () {
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  $(window).off('scroll')
+
+  //reset readmode
+  $('body').hasClass('read-mode') && $('body').removeClass('read-mode')
+
+  //reset font-size
+  $('body').css('font-size') !== originFontSize && $('body').css('font-size', parseFloat(originFontSize))
+})</script></div></body></html>
