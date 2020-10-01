@@ -1,122 +1,168 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>聆听音乐 | 笔记</title><meta name="description" content="🔶🔷聆&amp;ensp;听&amp;ensp;世&amp;ensp;界🔷🔶🌟 人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟 📻 大神慧的小电台 📻        🔊 收藏好音乐        📀 适合的背景音乐"><meta name="keywords" content="笔记,生活,故事"><meta name="author" content="林慕凡"><meta name="copyright" content="林慕凡"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://bynote.cn/music/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="聆听音乐"><meta property="og:url" content="http://bynote.cn/music/"><meta property="og:site_name" content="笔记"><meta property="og:description" content="🔶🔷聆&amp;ensp;听&amp;ensp;世&amp;ensp;界🔷🔶🌟 人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟 📻 大神慧的小电台 📻        🔊 收藏好音乐        📀 适合的背景音乐"><meta property="og:image" content="http://bynote.cn/img/bg/post-bg/default_cover-2.jpg"><meta property="article:published_time" content="2020-08-26T01:00:01.000Z"><meta property="article:modified_time" content="2020-09-23T02:48:38.457Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
-  }
-}
-var activateLightMode = function () {
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
-  }
-}
-
-var getCookies = function (name) {
-  const value = `; ${document.cookie}`
-  const parts = value.split(`; ${name}=`)
-  if (parts.length === 2) return parts.pop().split(';').shift()
-}
-
-var autoChangeMode = 'true'
-var t = getCookies('theme')
-if (autoChangeMode === '1') {
-  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-  if (t === undefined) {
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport) {
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour <= 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-    }
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      if (Cookies.get('theme') === undefined) {
-        e.matches ? activateDarkMode() : activateLightMode()
-      }
-    })
-  } else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else if (autoChangeMode === '2') {
-  now = new Date()
-  hour = now.getHours()
-  isNight = hour <= 6 || hour >= 18
-  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else {
-  if (t === 'dark') activateDarkMode()
-  else if (t === 'light') activateLightMode()
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>聆听音乐 | 笔记</title><meta name="keywords" content="笔记,生活,故事"><meta name="author" content="林慕凡"><meta name="copyright" content="林慕凡"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="🔶🔷聆&amp;ensp;听&amp;ensp;世&amp;ensp;界🔷🔶🌟 人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟 📻 大神慧的小电台 📻        🔊 收藏好音乐        📀 适合的背景音乐">
+<meta property="og:type" content="website">
+<meta property="og:title" content="聆听音乐">
+<meta property="og:url" content="http://bynote.cn/music/index.html">
+<meta property="og:site_name" content="笔记">
+<meta property="og:description" content="🔶🔷聆&amp;ensp;听&amp;ensp;世&amp;ensp;界🔷🔶🌟 人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟 📻 大神慧的小电台 📻        🔊 收藏好音乐        📀 适合的背景音乐">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://bynote.cn/img/bg/post-bg/default_cover-6.jpg">
+<meta property="article:published_time" content="2020-08-26T01:00:01.000Z">
+<meta property="article:modified_time" content="2020-10-01T02:18:22.384Z">
+<meta property="article:author" content="林慕凡">
+<meta property="article:tag" content="笔记,生活,故事">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://bynote.cn/img/bg/post-bg/default_cover-6.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://bynote.cn/music/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
   root: '/',
   hexoversion: '5.1.1',
   algolia: undefined,
   localSearch: undefined,
   translate: undefined,
   noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
   copy: {
     success: '复制成功',
     error: '复制错误',
     noSupport: '浏览器不支持'
   },
-  bookmark: {
-    message_prev: '按',
-    message_next: '键将本页加入书签'
+  relativeDate: {
+    homepage: false,
+    post: false
   },
-  runtime_unit: '天',
-  runtime: true,
-  copyright: undefined,
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 林慕凡","link":"链接: ","source":"来源: 笔记","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
   ClickShowText: {"text":"富强,民主,文明,和谐,爱国,敬业,诚信,友善,自由,平等,公正,法治","fontSize":"15px"},
-  medium_zoom: false,
-  fancybox: true,
+  lightbox: 'fancybox',
   Snackbar: undefined,
   justifiedGallery: {
     js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
     css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
   },
-  baiduPush: false,
-  highlightCopy: true,
-  highlightLang: true,
-  isPhotoFigcaption: true,
+  isPhotoFigcaption: false,
   islazyload: true,
-  isanchor: false    
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
 }</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
   isPost: false,
   isHome: false,
   isHighlightShrink: false,
   isSidebar: false,
-  postUpdate: '2020-09-23 10:48:38'
-}</script><noscript><style>
-#nav {
-  opacity: 1
-}
-.justified-gallery img {
-  opacity: 1
-}
-</style></noscript><link rel="stylesheet" href="/css/diy/web_bg.css"><link rel="stylesheet" href="/css/diy/diy.css"><meta name="generator" content="Hexo 5.1.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">37</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">32</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa-fw fa fa-paper-plane"></i><span> 一言</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa-fw fa fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-fan"></i><span> 好玩</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><header class="not-index-bg" id="page-header" style="background-image: url(/img/bg/music.png)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">笔记</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa-fw fa fa-paper-plane"></i><span> 一言</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa-fw fa fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-fan"></i><span> 好玩</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="page_site-info"><h1 id="site_title">聆听音乐</h1></div></header><main class="layout_page hide-aside" id="content-inner"><div id="page"><div id="article-container"><h1 id="🔶🔷聆-ensp-听-ensp-世-ensp-界🔷🔶"><a href="#🔶🔷聆-ensp-听-ensp-世-ensp-界🔷🔶" class="headerlink" title="🔶🔷聆&ensp;听&ensp;世&ensp;界🔷🔶"></a><center>🔶🔷聆&ensp;听&ensp;世&ensp;界🔷🔶</center></h1><h2 id="🌟-人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟"><a href="#🌟-人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟" class="headerlink" title="🌟 人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟"></a><center>🌟 人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟</center></h2><hr>
+  postUpdate: '2020-10-01 10:18:22'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {
+  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }
+})()</script><link rel="stylesheet" href="/css/diy/web_bg.css"><link rel="stylesheet" href="/css/diy/diy.css"><meta name="generator" content="Hexo 5.1.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">38</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">32</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa-fw fa fa-paper-plane"></i><span> 一言</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa-fw fa fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-fan"></i><span> 好玩</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg"></div><header class="not-index-bg" id="page-header" style="background-image: url(/img/bg/music.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">笔记</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/artitalk/"><i class="fa-fw fa-fw fa fa-paper-plane"></i><span> 一言</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa-fw fa fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-fan"></i><span> 好玩</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="page-site-info"><h1 id="site-title">聆听音乐</h1></div></header><main class="layout_page hide-aside" id="content-inner"><div id="page"><div id="article-container"><h1 id="🔶🔷聆-ensp-听-ensp-世-ensp-界🔷🔶"><a href="#🔶🔷聆-ensp-听-ensp-世-ensp-界🔷🔶" class="headerlink" title="🔶🔷聆&ensp;听&ensp;世&ensp;界🔷🔶"></a><center>🔶🔷聆&ensp;听&ensp;世&ensp;界🔷🔶</center></h1><h2 id="🌟-人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟"><a href="#🌟-人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟" class="headerlink" title="🌟 人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟"></a><center>🌟 人不需要用眼睛去判读世界，闭眼聆听自己的心音，循心而往，便得无悔矣。🌟</center></h2><hr>
 <h3 id="📻-大神慧的小电台-📻"><a href="#📻-大神慧的小电台-📻" class="headerlink" title="📻 大神慧的小电台 📻"></a>📻 大神慧的小电台 📻</h3>
-    <div id="aplayer-JbGPcBjJ" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-LzReNLib" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="7724497259" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"
     ></div>
 
 <hr>
 <h3 id="🔊-收藏好音乐"><a href="#🔊-收藏好音乐" class="headerlink" title="🔊 收藏好音乐"></a>🔊 收藏好音乐</h3>
-    <div id="aplayer-GCCdBNOB" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-FwcaCMPa" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="7724478125" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"
     ></div>
 
 <hr>
 <h3 id="📀-适合的背景音乐"><a href="#📀-适合的背景音乐" class="headerlink" title="📀 适合的背景音乐"></a>📀 适合的背景音乐</h3>
-    <div id="aplayer-TcGAqwPF" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-yBkjAwHg" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="7724421612" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"
     ></div>
 
-</div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By 林慕凡</div><div class="framework-info"><span>由 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="framework-info"><span>CDN </span><a target="_blank" rel="noopener" href="https://Jsdelivr.com">Jsdelivr</a><span>加速 </span><span class="footer-separator">|</span><span>托管 </span><a target="_blank" rel="noopener" href="https://github.com/bynotes">Github</a><span>Host </span></div><div class="footer_custom_text">我相信我可以，但我一直在路上，所以我有无限的可能！！</div><div class="icp"><a target="_blank" rel="noopener" href="https://icp.gov.moe/"><span>萌ICP备</span><img class="icp-icon" src="/img/micp.png"/><span>20200099号</span></a></div><a target="_blank" rel="noopener" href="https://vercel.com/"><img class="icp-icon" src="/img/Hosting.svg"/></a><a target="_blank" rel="noopener" href="https://githun.com/bynote/"><img class="icp-icon" src="/img/FCDN.svg"/></a><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/"><img class="icp-icon" src="/img/WT.svg"/></a><a target="_blank" rel="noopener" href="https://www.jsdelivr.com/"><img class="icp-icon" src="/img/CDN.svg"/></a><div id="running-time"><script>setInterval(()=>{let create_time=Math.round(new Date(Date.UTC(2019,01,01,0,0,0)).getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='本站已在夹缝中安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);</script></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+<div class="aplayer" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-mutex="true" data-preload="auto" data-theme="#3F51B5"></div>
+
+</div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By 林慕凡</div><div class="framework-info"><span>由 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="framework-info"><span>CDN </span><a target="_blank" rel="noopener" href="https://Jsdelivr.com">Jsdelivr</a><span>加速 </span><span class="footer-separator">|</span><span>托管 </span><a target="_blank" rel="noopener" href="https://github.com/bynotes">Github</a><span>Host </span></div><div class="footer_custom_text">我相信我可以，但我一直在路上，所以我有无限的可能！！</div><div class="icp"><a target="_blank" rel="noopener" href="https://icp.gov.moe/"><span>萌ICP备</span><img class="icp-icon" src="/img/micp.png"/><span>20200099号</span></a></div><a target="_blank" rel="noopener" href="https://vercel.com/"><img class="icp-icon" src="/img/Hosting.svg"/></a><a target="_blank" rel="noopener" href="https://githun.com/bynote/"><img class="icp-icon" src="/img/FCDN.svg"/></a><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/"><img class="icp-icon" src="/img/WT.svg"/></a><a target="_blank" rel="noopener" href="https://www.jsdelivr.com/"><img class="icp-icon" src="/img/CDN.svg"/></a><div id="running-time"><script>setInterval(()=>{let create_time=Math.round(new Date(Date.UTC(2019,01,01,0,0,0)).getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='本站已在夹缝中安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);</script></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
   if (window.mermaidJsLoad) mermaid.init()
   else {
     $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function () {
@@ -129,7 +175,7 @@ if (autoChangeMode === '1') {
   }
 }</script><script>function loadValine () {
   function initValine () {
-    window.valine = new Valine({
+    const initData = {
       el: '#vcomment',
       appId: 'xsaWQL3IDE7RtBq0gEalXK6W-MdYXbMMI',
       appKey: 'zhMAc6wugOXYYyeEhCURqXib',
@@ -144,8 +190,13 @@ if (autoChangeMode === '1') {
       emojiMaps: "",
       enableQQ: false,
       path: window.location.pathname,
-    });
-    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+
+    const valine = new Valine(initData)
   }
 
   if (typeof Valine === 'function') initValine() 
@@ -153,14 +204,14 @@ if (autoChangeMode === '1') {
 }
 
 if ('Valine' === 'Valine' || !false) {
-  if (false) loadComment(document.querySelector('#vcomment'),loadValine)
+  if (false) btf.loadComment(document.querySelector('#vcomment'),loadValine)
   else setTimeout(() => loadValine(), 0)
 } else {
   function loadOtherComment () {
     loadValine()
   }
-}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/js/diy/diy.js"></script><div class="aplayer no-destroy" data-id="7724421612" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" data-loop="all" muted></div><script defer="defer" id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script src="/js/third-party/ClickShowText.js" async="async"></script><script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/765286c4.js","daovoice")
-</script><script>var isChatBtn = true
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/js/diy/diy.js"></script><div class="aplayer no-destroy" data-id="7724421612" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" data-loop="all" muted></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" async="async" mobile="false"></script><script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/765286c4.js","daovoice")
+</script><script>var isChatBtn = false
 daovoice('init', {
   app_id: '765286c4',},{
   launcher: { 
@@ -196,7 +247,6 @@ if (isChatBtn) {
   }
 }</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
   'title',
-  'meta[name=description]',
   '#config_change',
   '#body-wrap',
   '#rightside-config-hide',
@@ -208,20 +258,22 @@ if (false) {
   pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
 }
 
-const pjax = new Pjax({
-  elements: 'a:not([target="_blank"])',
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/artitalk/"]):not([href="xxxx"])',
   selectors: pjaxSelectors,
   cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
 })
 
 document.addEventListener('pjax:complete', function () {
-  refreshFn()
+  window.refreshFn()
 
   $('script[data-pjax]').each(function () {
     $(this).parent().append($(this).remove())
   })
 
-  GLOBAL_CONFIG.islazyload && lazyLoadInstance.update()
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
 
   typeof chatBtnFn === 'function' && chatBtnFn()
   typeof panguInit === 'function' && panguInit()
@@ -232,9 +284,21 @@ document.addEventListener('pjax:complete', function () {
 
   typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
 
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
 })
 
+
 document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
   if (window.aplayers) {
     for (let i = 0; i < window.aplayers.length; i++) {
       if (!window.aplayers[i].options.fixed) {
@@ -250,6 +314,4 @@ document.addEventListener('pjax:send', function () {
   //reset readmode
   $('body').hasClass('read-mode') && $('body').removeClass('read-mode')
 
-  //reset font-size
-  $('body').css('font-size') !== originFontSize && $('body').css('font-size', parseFloat(originFontSize))
 })</script></div></body></html>
